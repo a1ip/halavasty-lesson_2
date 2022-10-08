@@ -37,6 +37,7 @@
           <li>Быстрая доставка фитч</li>
           <li>Релизный цикл с возможностью отката</li>
           <li>Мониторинг здоровья сервиса</li>
+          <li>Документация/Спецификация</li>
         </ul>
       </div>
     </section>
@@ -222,11 +223,96 @@
       <div class="content">
         <h2 class="">Ветки</h2>
         <ul>
-          <li>git branch</li>
+          <li>git branch [имя]</li>
           <li>Указывают на коммиты</li>
           <li>Перемещаются при создании новых коммитов</li>
           <li>Ветка по умолчанию master</li>
           <li>HEAD указатель на текущюю ветку</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Перемещение между ветками</h2>
+        <ul>
+          <li>git checkout [имя]</li>
+          <li>git checkout -b [имя]</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Посмотреть историю</h2>
+        <ul>
+          <li>git log</li>
+          <li>git log --oneline --all --graph</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Слияние веток</h2>
+        <ul>
+          <li>git merge [имя вветки (которую будем вливать в текущюю)]</li>
+          <li>git merge [имя вветки] --no-ff</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Собираем вишенки с торта</h2>
+        <ul>
+          <li>git cherry-pick [хеш комита, ..]</li>
+          <li>Собирает дельту</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">А как ещё можно выполнить слияние веток?</h2>
+        <ul>
+          <li class="next">git rebase</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <h2 class="white">Отличия</h2>
+      <img class="cover" src="public/images/merge-rebase.png" alt="html code" />
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Отмена коммитов</h2>
+        <ul>
+          <li>git revert [хеш]</li>
+          <li>git revert [хеш] -m 1</li>
+          <li class="next">git reset [хеш]</li>
+          <li>git reset [хеш] --soft</li>
+          <li>git reset [хеш] --hard</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Журнал</h2>
+        <ul>
+          <li>git reflog</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide purple">
+      <div class="content">
+        <h2 class="">Сборщик мусора</h2>
+        <ul>
+          <li>git gc</li>
         </ul>
       </div>
     </section>
